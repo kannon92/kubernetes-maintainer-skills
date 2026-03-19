@@ -8,6 +8,21 @@
       "name": "example-plugin",
       "source": "./plugins/example-plugin",
       "description": "Example plugin demonstrating command structure"
+    },
+    {
+      "name": "kube-api-review",
+      "source": "./plugins/kube-api-review",
+      "description": "TODO: Add description"
+    },
+    {
+      "name": "commit-from-changes",
+      "source": "./plugins/commit-from-changes",
+      "description": "TODO: Add description"
+    },
+    {
+      "name": "create-pr-from-changes",
+      "source": "./plugins/create-pr-from-changes",
+      "description": "TODO: Add description"
     }
   ]
 }

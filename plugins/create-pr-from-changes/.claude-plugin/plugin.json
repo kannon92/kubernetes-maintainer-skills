@@ -1,0 +1,8 @@
+{
+  "name": "create-pr-from-changes",
+  "description": "Create a GitHub pull request from the current branch",
+  "version": "0.0.1",
+  "author": {
+    "name": "TODO: Add author"
+  }
+}
