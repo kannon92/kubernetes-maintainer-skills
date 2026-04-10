@@ -1,8 +1,8 @@
 {
   "name": "commit-from-changes",
-  "description": "TODO: Add description",
+  "description": "Stage and commit changes with a Kubernetes-style commit message",
   "version": "0.0.1",
   "author": {
-    "name": "TODO: Add author"
+    "name": "Kevin Hannon"
   }
 }

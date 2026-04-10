@@ -8,7 +8,7 @@ This document lists all available Claude Code plugins and their commands in the 
 
 ### Commit From Changes Plugin
 
-TODO: Add description
+Stage and commit changes with a Kubernetes-style commit message
 
 **Commands:**
 - **`/commit-from-changes:commit-from-changes`** - Stage and commit changes with a Kubernetes-style commit message
@@ -27,7 +27,7 @@ See [plugins/create-pr-from-changes/README.md](plugins/create-pr-from-changes/RE
 
 ### Kube Api Review Plugin
 
-TODO: Add description
+Review Kubernetes API types against API conventions
 
 **Commands:**
 - **`/kube-api-review:kube-api-review`** - Review Kubernetes API types against API conventions
