@@ -13,12 +13,16 @@ Add the marketplace to Claude Code:
 Install a specific plugin:
 
 ```
-/plugin install example-plugin@kubernetes-maintainer-skills
+/plugin install <plugin-name>@kubernetes-maintainer-skills
 ```
 
+<!-- BEGIN PLUGINS -->
 ## Plugins
 
-- **example-plugin**: Example plugin demonstrating command structure
+- **commit-from-changes**: Stage and commit changes with a Kubernetes-style commit message
+- **create-pr-from-changes**: Create a GitHub pull request from the current branch
+- **kube-api-review**: Review Kubernetes API types against API conventions
+<!-- END PLUGINS -->
 
 ## Development
 

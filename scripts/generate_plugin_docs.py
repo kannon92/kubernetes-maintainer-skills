@@ -148,32 +148,83 @@ def generate_plugin_docs(plugins_dir: Path) -> str:
 
 def write_plugins_file(plugins_path: Path, plugins_content: str) -> None:
     """Write the PLUGINS.md file with plugin documentation."""
-    
+
     with open(plugins_path, 'w') as f:
         f.write(plugins_content)
 
 
+def update_readme(repo_root: Path, plugins_dir: Path) -> None:
+    """Update the plugins section in README.md between marker comments."""
+    readme_path = repo_root / 'README.md'
+    if not readme_path.exists():
+        return
+
+    with open(readme_path, 'r') as f:
+        content = f.read()
+
+    begin_marker = '<!-- BEGIN PLUGINS -->'
+    end_marker = '<!-- END PLUGINS -->'
+
+    begin_idx = content.find(begin_marker)
+    end_idx = content.find(end_marker)
+    if begin_idx == -1 or end_idx == -1:
+        print("Warning: README.md missing plugin markers, skipping README update.")
+        return
+
+    # Build the replacement section
+    plugins = []
+    for plugin_dir in sorted(plugins_dir.iterdir()):
+        if not plugin_dir.is_dir():
+            continue
+        plugin_info = get_plugin_info(plugin_dir)
+        if plugin_info:
+            plugins.append(plugin_info)
+
+    lines = []
+    lines.append("## Plugins")
+    lines.append("")
+    for plugin in plugins:
+        lines.append(f"- **{plugin.name}**: {plugin.description}")
+    section = '\n'.join(lines)
+
+    updated = (
+        content[:begin_idx + len(begin_marker)]
+        + '\n'
+        + section
+        + '\n'
+        + content[end_idx:]
+    )
+
+    with open(readme_path, 'w') as f:
+        f.write(updated)
+
+    print("✓ README.md plugins section updated!")
+
+
 def main():
     """Main entry point."""
-    
+
     # Determine repository root
     script_dir = Path(__file__).parent
     repo_root = script_dir.parent
-    
+
     plugins_dir = repo_root / 'plugins'
     plugins_path = repo_root / 'PLUGINS.md'
-    
+
     if not plugins_dir.exists():
         print(f"Error: Plugins directory not found: {plugins_dir}", file=sys.stderr)
         sys.exit(1)
-    
+
     print("Scanning plugins...")
     plugins_docs = generate_plugin_docs(plugins_dir)
-    
+
     print("Writing PLUGINS.md...")
     write_plugins_file(plugins_path, plugins_docs)
-    
+
     print("✓ Plugin documentation updated successfully in PLUGINS.md!")
+
+    print("Updating README.md...")
+    update_readme(repo_root, plugins_dir)
 
 
 if __name__ == '__main__':
