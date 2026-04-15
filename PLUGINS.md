@@ -6,6 +6,7 @@ This document lists all available Claude Code plugins and their commands in the 
 - [Create Pr From Changes](#create-pr-from-changes-plugin)
 - [Kube Api Review](#kube-api-review-plugin)
 - [Sig Node Testgrid Prompt](#sig-node-testgrid-prompt-plugin)
+- [Triage Prow Job](#triage-prow-job-plugin)
 
 ### Commit From Changes Plugin
 
@@ -40,6 +41,16 @@ See [plugins/kube-api-review/README.md](plugins/kube-api-review/README.md) for d
 Triage the sig-node TestGrid dashboard and generate a comprehensive failure report
 
 **Commands:**
-- **`/sig-node-testgrid-prompt:sig-node-testgrid-prompt`** - 
+- **`/sig-node-testgrid-prompt:sig-node-testgrid-prompt`** - Regenerate the sig-node TestGrid triage report
 
 See [plugins/sig-node-testgrid-prompt/README.md](plugins/sig-node-testgrid-prompt/README.md) for detailed documentation.
+
+### Triage Prow Job Plugin
+
+TODO: Add description
+
+**Commands:**
+- **`/triage-prow-job:example`** - Example command
+- **`/triage-prow-job:triage-prow-job`** - Triage a failing Prow job from its URL
+
+See [plugins/triage-prow-job/README.md](plugins/triage-prow-job/README.md) for detailed documentation.

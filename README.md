@@ -23,6 +23,7 @@ Install a specific plugin:
 - **create-pr-from-changes**: Create a GitHub pull request from the current branch
 - **kube-api-review**: Review Kubernetes API types against API conventions
 - **sig-node-testgrid-prompt**: Triage the sig-node TestGrid dashboard and generate a comprehensive failure report
+- **triage-prow-job**: TODO: Add description
 <!-- END PLUGINS -->
 
 ## Development

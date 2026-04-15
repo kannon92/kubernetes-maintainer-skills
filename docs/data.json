@@ -69,7 +69,31 @@
       "commands": [
         {
           "name": "sig-node-testgrid-prompt",
-          "description": "",
+          "description": "Regenerate the sig-node TestGrid triage report",
+          "synopsis": "",
+          "argument_hint": ""
+        }
+      ],
+      "skills": [],
+      "hooks": [],
+      "agents": [],
+      "has_readme": true,
+      "has_mcp": false
+    },
+    {
+      "name": "triage-prow-job",
+      "description": "TODO: Add description",
+      "version": "0.0.1",
+      "commands": [
+        {
+          "name": "example",
+          "description": "Example command",
+          "synopsis": "/triage-prow-job:example",
+          "argument_hint": ""
+        },
+        {
+          "name": "triage-prow-job",
+          "description": "Triage a failing Prow job from its URL",
           "synopsis": "",
           "argument_hint": ""
         }
