@@ -28,6 +28,11 @@
       "name": "triage-prow-job",
       "source": "./plugins/triage-prow-job",
       "description": "TODO: Add description"
+    },
+    {
+      "name": "triage-github-notifications",
+      "source": "./plugins/triage-github-notifications",
+      "description": "Fetch and triage GitHub notifications, highlighting items that require action"
     }
   ]
 }

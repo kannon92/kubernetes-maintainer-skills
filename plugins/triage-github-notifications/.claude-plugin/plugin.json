@@ -1,0 +1,8 @@
+{
+  "name": "triage-github-notifications",
+  "description": "Fetch and triage GitHub notifications, highlighting items that require action",
+  "version": "0.1.0",
+  "author": {
+    "name": "kannon92"
+  }
+}
