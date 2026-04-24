@@ -33,6 +33,11 @@
       "name": "triage-github-notifications",
       "source": "./plugins/triage-github-notifications",
       "description": "Fetch and triage GitHub notifications, highlighting items that require action"
+    },
+    {
+      "name": "triage-issue",
+      "source": "./plugins/triage-issue",
+      "description": "Triage a GitHub issue by investigating the codebase, identifying the root cause, and proposing a fix"
     }
   ]
 }

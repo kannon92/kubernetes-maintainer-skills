@@ -6,6 +6,8 @@ This document lists all available Claude Code plugins and their commands in the 
 - [Create Pr From Changes](#create-pr-from-changes-plugin)
 - [Kube Api Review](#kube-api-review-plugin)
 - [Sig Node Testgrid Prompt](#sig-node-testgrid-prompt-plugin)
+- [Triage Github Notifications](#triage-github-notifications-plugin)
+- [Triage Issue](#triage-issue-plugin)
 - [Triage Prow Job](#triage-prow-job-plugin)
 
 ### Commit From Changes Plugin
@@ -44,6 +46,26 @@ Triage the sig-node TestGrid dashboard and generate a comprehensive failure repo
 - **`/sig-node-testgrid-prompt:sig-node-testgrid-prompt`** - Regenerate the sig-node TestGrid triage report
 
 See [plugins/sig-node-testgrid-prompt/README.md](plugins/sig-node-testgrid-prompt/README.md) for detailed documentation.
+
+### Triage Github Notifications Plugin
+
+Fetch and triage GitHub notifications, highlighting items that require action
+
+**Commands:**
+- **`/triage-github-notifications:example`** - Example command
+- **`/triage-github-notifications:triage-github-notifications`** - Fetch and triage GitHub notifications, highlighting items that require action
+
+See [plugins/triage-github-notifications/README.md](plugins/triage-github-notifications/README.md) for detailed documentation.
+
+### Triage Issue Plugin
+
+Triage a GitHub issue by investigating the codebase, identifying the root cause, and proposing a fix
+
+**Commands:**
+- **`/triage-issue:example`** - Example usage of the triage-issue command
+- **`/triage-issue:triage-issue`** - Triage a GitHub issue by investigating the codebase, identifying the root cause, and proposing a fix
+
+See [plugins/triage-issue/README.md](plugins/triage-issue/README.md) for detailed documentation.
 
 ### Triage Prow Job Plugin
 

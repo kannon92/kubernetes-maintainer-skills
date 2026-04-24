@@ -1,0 +1,8 @@
+{
+  "name": "triage-issue",
+  "description": "Triage a GitHub issue by investigating the codebase, identifying the root cause, and proposing a fix",
+  "version": "0.1.0",
+  "author": {
+    "name": "kannon92"
+  }
+}

@@ -103,6 +103,54 @@
       "agents": [],
       "has_readme": true,
       "has_mcp": false
+    },
+    {
+      "name": "triage-github-notifications",
+      "description": "Fetch and triage GitHub notifications, highlighting items that require action",
+      "version": "0.1.0",
+      "commands": [
+        {
+          "name": "example",
+          "description": "Example command",
+          "synopsis": "/triage-github-notifications:example",
+          "argument_hint": ""
+        },
+        {
+          "name": "triage-github-notifications",
+          "description": "Fetch and triage GitHub notifications, highlighting items that require action",
+          "synopsis": "",
+          "argument_hint": ""
+        }
+      ],
+      "skills": [],
+      "hooks": [],
+      "agents": [],
+      "has_readme": true,
+      "has_mcp": false
+    },
+    {
+      "name": "triage-issue",
+      "description": "Triage a GitHub issue by investigating the codebase, identifying the root cause, and proposing a fix",
+      "version": "0.1.0",
+      "commands": [
+        {
+          "name": "example",
+          "description": "Example usage of the triage-issue command",
+          "synopsis": "/triage-issue 12345",
+          "argument_hint": ""
+        },
+        {
+          "name": "triage-issue",
+          "description": "Triage a GitHub issue by investigating the codebase, identifying the root cause, and proposing a fix",
+          "synopsis": "",
+          "argument_hint": ""
+        }
+      ],
+      "skills": [],
+      "hooks": [],
+      "agents": [],
+      "has_readme": true,
+      "has_mcp": false
     }
   ]
 }
